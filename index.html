@@ -156,6 +156,23 @@
     <h2>Selected Projects</h2>
 
     <article class="entry">
+      <a class="entry-media" href="https://aniso-jw.github.io/tactile-page/"><img src="tactile-sim.jpg" alt="MuJoCo simulation of the AmazingHand holding a bar between sensorised thumb and index fingertips"></a>
+      <div>
+        <div class="entry-year">2026 · in progress</div>
+        <div class="entry-title">Slip-Aware Tactile Fingertips for a Robot Hand</div>
+        <div class="entry-sub">Independent project</div>
+        <ul class="entry-desc">
+          <li>Designed a bump-on-taxel fingertip sensor: one bump per 2×2 taxels on a 96-electrode flex PCB wrapped around a custom 3D-printed shell, so bump tilt gives a shear-to-normal ratio that warns of slip before it happens.</li>
+          <li>Designed a 4-layer back-of-hand readout board adapted from OpenTac (STM32G431, 74HC595 row drivers, one ADG706 column mux shared by four fingers); flex PCBs and boards ordered.</li>
+          <li>Modeled the full sensor chain in MuJoCo (bump mechanics, pressure film, readout circuit, ADC) so the grip controller sees the same frames as the real board.</li>
+          <li>In simulation, a shear-ratio grip controller held a bar under a growing 0–3 N pull with the lowest grip force of any setting that did not drop it (8.4 N vs 10.1 N for the best fixed grip).</li>
+        </ul>
+        <div class="entry-tags">MuJoCo · Flex PCB · KiCad · STM32 · Tactile Sensing · Sim-to-Real</div>
+        <div class="entry-links"><a href="https://aniso-jw.github.io/tactile-page/">Project Page</a></div>
+      </div>
+    </article>
+
+    <article class="entry">
       <a class="entry-media" href="https://aniso-jw.github.io/robot-hand/en.html"><img src="tactile-hand.jpg" alt="3D-printed robot hand with PVDF and FSR sensors on its fingertips, wired to a breadboard with an ESP32 and ADS1115"></a>
       <div>
         <div class="entry-year">2026</div>
