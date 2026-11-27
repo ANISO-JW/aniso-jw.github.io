@@ -181,7 +181,7 @@
         <ul class="entry-desc">
           <li>Built a two-modality tactile front end: FSR normal-force sensing through a 16-bit I2C ADC, and PVDF-film slip-vibration sensing through a mid-rail-biased ×51 amplifier stage.</li>
           <li>Sized the amplifier gain by characterizing the sensor noise floor with an FFT on MCU-sampled data, after measuring that the unamplified slip signal fell below the ADC quantization floor.</li>
-          <li>Detected slip on the bench from the total variation of the signal over a 0.5 s window sampled at 5 kHz, separating idle from sliding contact by a factor of 1.7.</li>
+          <li>Compared idle and sliding contact using total signal variation over a 0.5 s window sampled at 5 kHz; observed 1.7× separation in the bench comparison, not a calibrated detection-accuracy result.</li>
           <li>Integrated the sensor acquisition chain on a physical 8-DOF AmazingHand; hardware documentation includes live FSR channels and PVDF slip transients.</li>
         </ul>
         <div class="entry-tags">ESP32 · FSR / PVDF · Analog Front End · ADS1115 · FFT · Bench Testing</div>
