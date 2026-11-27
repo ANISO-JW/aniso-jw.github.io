@@ -176,15 +176,15 @@
       <a class="entry-media" href="https://aniso-jw.github.io/robot-hand/en.html"><img src="tactile-hand.jpg" alt="3D-printed robot hand with PVDF and FSR sensors on its fingertips, wired to a breadboard with an ESP32 and ADS1115"></a>
       <div>
         <div class="entry-year">2026</div>
-        <div class="entry-title">Tactile-Feedback Robotic Hand</div>
+        <div class="entry-title">FSR–PVDF Tactile Sensor</div>
         <div class="entry-sub">Independent project</div>
         <ul class="entry-desc">
           <li>Built a two-modality tactile front end: FSR normal-force sensing through a 16-bit I2C ADC, and PVDF-film slip-vibration sensing through a mid-rail-biased ×51 amplifier stage.</li>
           <li>Sized the amplifier gain by characterizing the sensor noise floor with an FFT on MCU-sampled data, after measuring that the unamplified slip signal fell below the ADC quantization floor.</li>
           <li>Detected slip on the bench from the total variation of the signal over a 0.5 s window sampled at 5 kHz, separating idle from sliding contact by a factor of 1.7.</li>
-          <li>Ported an open-source MediaPipe / MuJoCo / Mink teleoperation pipeline (dora-rs) to Windows for an 8-DOF hand, tuning IK damping and update rate for stable tracking.</li>
+          <li>Integrated the sensor acquisition chain on a physical 8-DOF AmazingHand; hardware documentation includes live FSR channels and PVDF slip transients.</li>
         </ul>
-        <div class="entry-tags">ESP32 · FSR / PVDF · Analog Front End · MuJoCo · Mink IK · dora-rs</div>
+        <div class="entry-tags">ESP32 · FSR / PVDF · Analog Front End · ADS1115 · FFT · Bench Testing</div>
         <div class="entry-links"><a href="https://aniso-jw.github.io/robot-hand/en.html">Project Page</a></div>
       </div>
     </article>
